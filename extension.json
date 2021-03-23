@@ -1,0 +1,14 @@
+{
+	"name": "ScratchSig3",
+	"author": ["Jacob G. (jvvg)"],
+	"url": "",
+	"AutoloadClasses": {
+		"BlockAppealEmail": "BlockAppealEmail.php"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "BlockAppealEmail::onParserFirstCallInit"
+	},
+	"config": {
+		"BlockAppealEmail": ""
+	}
+}
