@@ -1,7 +1,8 @@
 {
 	"name": "HiddenBlockAppealEmail",
 	"author": ["Jacob G. (jvvg)"],
-	"url": "",
+	"description": "Show an email address to appeal blocks that is only visible to blocked users",
+	"url": "https://github.com/InternationalScratchWiki/HiddenBlockAppealEmail",
 	"AutoloadClasses": {
 		"BlockAppealEmail": "BlockAppealEmail.php"
 	},
