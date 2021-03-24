@@ -13,7 +13,7 @@ class BlockAppealEmail {
 		if ($parser->getUser()->isBlocked()) {
 			return $wgBlockAppealEmail;
 		} else {
-			return empty($body) ? '' : $body;
+			return empty($body) ? '' : $parser->recursiveTagParse($body);
 		}
 	}
 }
