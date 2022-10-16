@@ -1,15 +1,28 @@
 {
 	"name": "HiddenBlockAppealEmail",
-	"author": ["Jacob G. (jvvg)"],
+	"author": [
+		"Jacob G. (jvvg)"
+	],
 	"description": "Show an email address to appeal blocks that is only visible to blocked users",
 	"url": "https://github.com/InternationalScratchWiki/HiddenBlockAppealEmail",
 	"AutoloadClasses": {
 		"BlockAppealEmail": "BlockAppealEmail.php"
 	},
 	"Hooks": {
-		"ParserFirstCallInit": "BlockAppealEmail::onParserFirstCallInit"
+		"ParserFirstCallInit": "main"
+	},
+	"HookHandlers": {
+		"main": {
+			"class": "BlockAppealEmail"
+		}
 	},
 	"config": {
-		"BlockAppealEmail": ""
+		"BlockAppealEmail": {
+			"value": ""
+		}
+	},
+	"manifest_version": 2,
+	"requires": {
+		"MediaWiki": ">= 1.35.0"
 	}
 }
