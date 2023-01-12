@@ -1,4 +1,5 @@
 {
+	"manifest_version": 1,
 	"name": "HiddenBlockAppealEmail",
 	"author": ["Jacob G. (jvvg)"],
 	"description": "Show an email address to appeal blocks that is only visible to blocked users",
