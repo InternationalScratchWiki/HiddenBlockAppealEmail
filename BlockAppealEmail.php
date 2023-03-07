@@ -13,7 +13,7 @@ class BlockAppealEmail implements ParserFirstCallInitHook {
 		//disable caching so that the block information is truly up to date
 		$parser->getOutput()->updateCacheExpiry(0);
 
-		if ($parser->getUser()->getBlock()) {
+		if ($parser->getUserIdentity()->getBlock()) {
 			return $wgBlockAppealEmail;
 		} else {
 			return $body === null ? '' : $parser->recursiveTagParse($body);
